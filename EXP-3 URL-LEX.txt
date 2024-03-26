@@ -1,0 +1,12 @@
+%{
+%}
+%%
+[https://]+[www.]+[a-z.0-9]+(.com) {printf("\n url is valid\n");}
+.+ {printf("\n url is not valid\n");}
+%%
+int yywrap()
+{}
+int main(){
+printf("\n enter the url:");
+yylex();
+}
